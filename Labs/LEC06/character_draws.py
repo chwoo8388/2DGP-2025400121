@@ -22,10 +22,7 @@ def draw_left():
 
 def draw_bottom():
     for x in range(100, 700, 5):
-        clear_canvas()
-        character.draw(x, 100)
-        update_canvas()
-        delay(0.001)
+        draw_rectangle_canvas(x, 100)
 
 def draw_right():
     for y in range(100, 500, 5):
