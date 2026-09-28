@@ -9,10 +9,11 @@ def draw_shape_canvas(x, y):
     clear_canvas()
     character.draw(x, y)
     update_canvas()
-    delay(0.003)
+    delay(0.01)
 
 # -------------------------------------------------------------
 def draw_top():
+    # 사각형 상단 그리기
     for x in range(700, 100, -5):
         draw_shape_canvas(x, 500)
 
@@ -69,9 +70,10 @@ def move_triangle():
 
 
 while True:
-    move_circle()
-    move_rectangle()
-    move_triangle()
+    # move_circle()
+    # move_rectangle()
+    # move_triangle()
+    close_canvas()
     pass
 
 
