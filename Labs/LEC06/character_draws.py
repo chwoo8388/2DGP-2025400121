@@ -45,6 +45,13 @@ def move_circle():
         character.draw(x, y)
         update_canvas()
         delay(0.001)
+# -------------------------------------------------------------
+def draw_leftside():
+    pass
+def draw_bottomside():
+    pass
+def draw_rightside():
+    pass
 
 
 def move_rectangle():
@@ -54,6 +61,9 @@ def move_rectangle():
     draw_right()
 
 def move_triangle():
+    draw_leftside()
+    draw_bottomside()
+    draw_rightside()
     pass
 
 
