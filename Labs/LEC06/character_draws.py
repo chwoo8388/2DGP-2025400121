@@ -9,9 +9,9 @@ def draw_shape_canvas(x, y):
     clear_canvas()
     character.draw(x, y)
     update_canvas()
-    delay(0.005)
+    delay(0.003)
 
-
+# -------------------------------------------------------------
 def draw_top():
     for x in range(700, 100, -5):
         draw_shape_canvas(x, 500)
@@ -28,7 +28,7 @@ def draw_right():
     for y in range(100, 500, 5):
         draw_shape_canvas(700, y)
 
-
+# -------------------------------------------------------------
 def move_circle():
     for degree in range(360):
         theta = math.radians(degree)
@@ -53,7 +53,7 @@ def draw_rightside():
     for x in range(400, 700, 5):
         y = 100 + (x - 400) * 4 / 3
         draw_shape_canvas(x, y)
-
+# -------------------------------------------------------------
 
 def move_rectangle():
     draw_top()
