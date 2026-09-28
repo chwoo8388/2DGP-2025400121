@@ -61,10 +61,7 @@ def draw_leftside():
 def draw_topside():
     for x in range(700, 100, -5):
         y = 500
-        clear_canvas()
-        character.draw(x, y)
-        update_canvas()
-        delay(0.01)
+        draw_triangle_canvas(x, y)
 
 
 def draw_rightside():
