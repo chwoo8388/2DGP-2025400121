@@ -14,10 +14,7 @@ def draw_rectangle_canvas(x, y):
 
 def draw_top():
     for x in range(700, 100, -5):
-        clear_canvas()
-        character.draw(x, 500)
-        update_canvas()
-        delay(0.001)
+        draw_rectangle_canvas(x, 500)
 
 def draw_left():
     for y in range(500, 100, -5):
@@ -91,8 +88,8 @@ def move_triangle():
 
 while True:
     # move_circle()
-    # move_rectangle()
-    move_triangle()
+    move_rectangle()
+    # move_triangle()
     pass
 
 
