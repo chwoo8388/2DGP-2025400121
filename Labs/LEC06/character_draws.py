@@ -47,16 +47,16 @@ def move_circle():
         delay(0.001)
 # -------------------------------------------------------------
 def draw_leftside():
-    for x in range(400, 700, 5):
-        y = 100 + (x - 400) * 4 / 3
+    for x in range(100, 400, 5):
+        y = 500 - (x - 100) * 4 / 3
         clear_canvas()
         character.draw(x, y)
         update_canvas()
         delay(0.001)
-        
+
 def draw_bottomside():
-    # 아래 변 그리기
     pass
+
 def draw_rightside():
     # 오른쪽 변 그리기
     pass
