@@ -28,6 +28,7 @@ def draw_bottom():
         draw_shape_canvas(x, 100)
 
 def draw_right():
+    # 사각형 우변 그리기
     for y in range(100, 500, 5):
         draw_shape_canvas(700, y)
 
