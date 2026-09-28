@@ -23,6 +23,7 @@ def draw_left():
         draw_shape_canvas(100, y)
 
 def draw_bottom():
+    # 사각형 하단 그리기
     for x in range(100, 700, 5):
         draw_shape_canvas(x, 100)
 
