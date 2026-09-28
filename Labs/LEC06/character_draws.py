@@ -35,10 +35,7 @@ def move_circle():
         x = 400 + 200 * math.cos(theta)
         y = 300 + 200 * math.sin(theta)
 
-        clear_canvas()
-        character.draw(x, y)
-        update_canvas()
-        delay(0.001)
+        draw_shape_canvas(x, y)
 # -------------------------------------------------------------
 
 def draw_leftside():
@@ -72,9 +69,9 @@ def move_triangle():
 
 
 while True:
-    # move_circle()
+    move_circle()
     # move_rectangle()
-    move_triangle()
+    # move_triangle()
     pass
 
 
