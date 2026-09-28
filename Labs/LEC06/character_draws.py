@@ -67,10 +67,7 @@ def draw_topside():
 def draw_rightside():
     for x in range(400, 700, 5):
         y = 100 + (x - 400) * 4 / 3
-        clear_canvas()
-        character.draw(x, y)
-        update_canvas()
-        delay(0.01)
+        draw_triangle_canvas(x, y)
 
 
 def move_rectangle():
