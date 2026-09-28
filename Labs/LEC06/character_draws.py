@@ -5,28 +5,28 @@ from pico2d import *
 open_canvas(800,600)
 character = load_image('character.png')
 
-
-def draw_rectangle_canvas(x, y):
+def draw_shape_canvas(x, y):
     clear_canvas()
     character.draw(x, y)
     update_canvas()
     delay(0.01)
 
+
 def draw_top():
     for x in range(700, 100, -5):
-        draw_rectangle_canvas(x, 500)
+        draw_shape_canvas(x, 500)
 
 def draw_left():
     for y in range(500, 100, -5):
-        draw_rectangle_canvas(100, y)
+        draw_shape_canvas(100, y)
 
 def draw_bottom():
     for x in range(100, 700, 5):
-        draw_rectangle_canvas(x, 100)
+        draw_shape_canvas(x, 100)
 
 def draw_right():
     for y in range(100, 500, 5):
-        draw_rectangle_canvas(700, y)
+        draw_shape_canvas(700, y)
 
 
 def move_circle():
