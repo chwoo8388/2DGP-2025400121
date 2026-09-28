@@ -6,6 +6,12 @@ open_canvas(800,600)
 character = load_image('character.png')
 
 
+def draw_rectangle_canvas(x, y):
+    clear_canvas()
+    character.draw(x, y)
+    update_canvas()
+    delay(0.01)
+
 def draw_top():
     for x in range(700, 100, -5):
         clear_canvas()
