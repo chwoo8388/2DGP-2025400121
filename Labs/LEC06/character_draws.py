@@ -56,16 +56,20 @@ def draw_leftside():
 
 def draw_topside():
     for x in range(700, 100, -5):
-        y = 500  # y 좌표 고정
+        y = 500
         clear_canvas()
         character.draw(x, y)
         update_canvas()
         delay(0.001)
-    pass
+
 
 def draw_rightside():
-    # 오른쪽 변 그리기
-    pass
+    for x in range(400, 700, 5):
+        y = 100 + (x - 400) * 4 / 3
+        clear_canvas()
+        character.draw(x, y)
+        update_canvas()
+        delay(0.001)
 
 
 def move_rectangle():
