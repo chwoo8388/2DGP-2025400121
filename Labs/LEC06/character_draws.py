@@ -54,7 +54,13 @@ def draw_leftside():
         update_canvas()
         delay(0.001)
 
-def draw_bottomside():
+def draw_topside():
+    for x in range(700, 100, -5):
+        y = 500  # y 좌표 고정
+        clear_canvas()
+        character.draw(x, y)
+        update_canvas()
+        delay(0.001)
     pass
 
 def draw_rightside():
@@ -70,7 +76,7 @@ def move_rectangle():
 
 def move_triangle():
     draw_leftside()
-    draw_bottomside()
+    draw_topside()
     draw_rightside()
     pass
 
