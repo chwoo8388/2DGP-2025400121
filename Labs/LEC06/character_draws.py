@@ -9,7 +9,7 @@ def draw_shape_canvas(x, y):
     clear_canvas()
     character.draw(x, y)
     update_canvas()
-    delay(0.01)
+    delay(0.001)
 
 # -------------------------------------------------------------
 def draw_top():
@@ -73,10 +73,9 @@ def move_triangle():
 
 
 while True:
-    # move_circle()
-    # move_rectangle()
-    # move_triangle()
-    close_canvas()
+    move_circle()
+    move_rectangle()
+    move_triangle()
     pass
 
 
