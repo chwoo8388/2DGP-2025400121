@@ -47,10 +47,13 @@ def move_circle():
         delay(0.001)
 # -------------------------------------------------------------
 def draw_leftside():
+    # 왼쪽 변 그리기
     pass
 def draw_bottomside():
+    # 아래 변 그리기
     pass
 def draw_rightside():
+    # 오른쪽 변 그리기
     pass
 
 
@@ -70,7 +73,7 @@ def move_triangle():
 while True:
     move_circle()
     move_rectangle()
-    move_triangle()
+    # move_triangle()
     pass
 
 
