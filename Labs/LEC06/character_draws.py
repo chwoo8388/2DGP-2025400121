@@ -18,10 +18,7 @@ def draw_top():
 
 def draw_left():
     for y in range(500, 100, -5):
-        clear_canvas()
-        character.draw(100, y)
-        update_canvas()
-        delay(0.001)
+        draw_rectangle_canvas(100, y)
 
 def draw_bottom():
     for x in range(100, 700, 5):
