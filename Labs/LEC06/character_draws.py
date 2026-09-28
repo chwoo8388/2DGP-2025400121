@@ -26,10 +26,7 @@ def draw_bottom():
 
 def draw_right():
     for y in range(100, 500, 5):
-        clear_canvas()
-        character.draw(700, y)
-        update_canvas()
-        delay(0.001)
+        draw_rectangle_canvas(700, y)
 
 
 def move_circle():
