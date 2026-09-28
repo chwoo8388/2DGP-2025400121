@@ -52,7 +52,7 @@ def draw_leftside():
         clear_canvas()
         character.draw(x, y)
         update_canvas()
-        delay(0.001)
+        delay(0.01)
 
 def draw_topside():
     for x in range(700, 100, -5):
@@ -60,7 +60,7 @@ def draw_topside():
         clear_canvas()
         character.draw(x, y)
         update_canvas()
-        delay(0.001)
+        delay(0.01)
 
 
 def draw_rightside():
@@ -69,7 +69,7 @@ def draw_rightside():
         clear_canvas()
         character.draw(x, y)
         update_canvas()
-        delay(0.001)
+        delay(0.01)
 
 
 def move_rectangle():
@@ -79,8 +79,8 @@ def move_rectangle():
     draw_right()
 
 def move_triangle():
-    draw_leftside()
     draw_topside()
+    draw_leftside()
     draw_rightside()
     pass
 
