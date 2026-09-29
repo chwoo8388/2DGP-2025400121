@@ -9,9 +9,9 @@ frame = 0
 for x in range(0, 800, 5):
     clear_canvas()
     grass.draw(400, 30)
-    character.clip_draw(
+    character.clip_composite_draw(
         frame * 182, 0,
-        182, 182, x, 120,
+        182, 182, 0, 'h', x, 120, 182, 182,
     )
     update_canvas()
 
