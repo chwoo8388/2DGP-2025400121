@@ -79,6 +79,8 @@ for x in range(0, 395, 5):
     frame = (frame + 1) % 8
     delay(0.01)
 
+for attack_frame in range(14):
+    pass
 
 
 
