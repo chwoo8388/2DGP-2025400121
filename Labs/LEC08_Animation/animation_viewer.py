@@ -32,6 +32,16 @@ for x in range(0, 800, 5):
     delay(0.01)
 
 for x in range(800, 395, -5):
+    clear_canvas()
+    grass.draw(400, 30)
+    character2.clip_composite_draw(
+        frame * 180, 0,
+        180, 180, 0, 'h', x, 120, 180, 180,
+    )
+    update_canvas()
+
+    frame = (frame + 1) % 8
+    delay(0.01)
     pass
 
 close_canvas()
