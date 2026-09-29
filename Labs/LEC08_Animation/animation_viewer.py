@@ -80,7 +80,14 @@ for x in range(0, 395, 5):
     delay(0.01)
 
 for attack_frame in range(14):
-    pass
+    clear_canvas()
+    grass.draw(400, 30)
+    character2.clip_draw(
+        attack_frame * 100, 480,
+        100, 240, 395, 180, 120, 240,
+    )
+    update_canvas()
+    delay(0.05)
 
 
 
