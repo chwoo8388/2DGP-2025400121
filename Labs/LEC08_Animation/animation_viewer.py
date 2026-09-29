@@ -4,6 +4,7 @@ open_canvas()
 
 grass = load_image('grass.png')
 character = load_image('animation_viewer_sheet_transparent.png')
+character2 = load_image('animation_viewer_walk_jump_sheet_transparent.png')
 frame = 0
 
 for x in range(800, 0 , -5):
@@ -29,5 +30,8 @@ for x in range(0, 800, 5):
 
     frame = (frame + 1) % 8
     delay(0.01)
+
+for x in range(800, 395, -5):
+    pass
 
 close_canvas()
