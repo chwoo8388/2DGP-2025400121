@@ -67,6 +67,10 @@ for x in range(400, -5, -5):
     update_canvas()
     delay(0.01)
 
+for x in range(0, 395, 5):
+    pass
+
+
 
 
 close_canvas()
