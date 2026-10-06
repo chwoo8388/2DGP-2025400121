@@ -11,6 +11,7 @@ def handle_events():
 
     global x
     global y
+    global facing_left
 
     events = get_events()
     for event in events:
@@ -19,8 +20,10 @@ def handle_events():
         elif event.type == SDL_KEYDOWN:
             if event.key == SDLK_LEFT:
                 x -= 5
+                facing_left = True
             elif event.key == SDLK_RIGHT:
                 x += 5
+                facing_left = False
             elif event.key == SDLK_UP:
                 y += 5
             elif event.key == SDLK_DOWN:
@@ -31,13 +34,19 @@ def handle_events():
 running = True
 x = 800 // 2
 y = 90
+facing_left = False
 frame = 0
 
 # fill here
 while running:
     clear_canvas()
     tuk_ground.draw(400,30)
-    character.clip_draw(frame * 100, 100, 100, 100, x, y)
+    if facing_left:
+        character.clip_composite_draw(
+            frame * 100, 100, 100, 100, 0, 'h', x, y, 100, 100
+        )
+    else:
+        character.clip_draw(frame * 100, 100, 100, 100, x, y)
     update_canvas()
     handle_events()
     frame = (frame + 1) % 8
