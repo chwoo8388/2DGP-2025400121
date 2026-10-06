@@ -1,6 +1,7 @@
 from pico2d import *
 
-open_canvas()
+TUK_WIDTH, TUK_HEIGHT = 1080, 1024
+open_canvas(TUK_WIDTH, TUK_HEIGHT)
 tuk_ground = load_image('TUK_GROUND.png')
 character = load_image('animation_sheet.png')
 
@@ -32,7 +33,7 @@ def handle_events():
                 running = False
 
 running = True
-x = 800 // 2
+x = TUK_WIDTH // 2
 y = 90
 facing_left = False
 frame = 0
@@ -40,7 +41,7 @@ frame = 0
 # fill here
 while running:
     clear_canvas()
-    tuk_ground.draw(400,30)
+    tuk_ground.draw(TUK_WIDTH // 2, TUK_HEIGHT // 2)
     if facing_left:
         character.clip_composite_draw(
             frame * 100, 100, 100, 100, 0, 'h', x, y, 100, 100
