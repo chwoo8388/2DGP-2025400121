@@ -27,7 +27,9 @@ for x in range(0, 800, 5):
     update_canvas()
 
     # fill here
-
+    handle_events()
+    if not running:
+        break
 
     frame = (frame + 1) % 8
     delay(0.05)
