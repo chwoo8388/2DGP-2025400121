@@ -20,15 +20,15 @@ def handle_events():
             running = False
         elif event.type == SDL_KEYDOWN:
             if event.key == SDLK_LEFT:
-                x -= 5
+                x = max(50, x - 5)
                 facing_left = True
             elif event.key == SDLK_RIGHT:
-                x += 5
+                x = min(TUK_WIDTH - 50, x + 5)
                 facing_left = False
             elif event.key == SDLK_UP:
-                y += 5
+                y = min(TUK_HEIGHT - 50, y + 5)
             elif event.key == SDLK_DOWN:
-                y -= 5
+                y = max(50, y - 5)
             elif event.key == SDLK_ESCAPE:
                 running = False
 
